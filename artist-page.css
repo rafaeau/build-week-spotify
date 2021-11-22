@@ -1,0 +1,12 @@
+.play-bar{
+  background-color:rgb(34, 34, 34);  
+  position: fixed;
+  height: 13vh;
+  margin-top:80vh;
+  color: rgb(167, 160, 160);
+  padding: 20px;
+}
+
+i:hover{
+color: white;
+}
