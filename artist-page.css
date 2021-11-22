@@ -6,12 +6,18 @@ body{
 
 /* artist page background cover */
 .artist-page-bg{
-    background-image: url(/artist-page-pic/artist-cover.png);
+    /* background-image: url(/artist-page-pic/artist-cover.png); */
+
     width: 100%;
     height: 40vh;
     position:relative;
-    overflow: hidden;
 }
+.artist-page-bg img{
+    
+   width:1000px;
+   height: auto;
+}
+
 
 .artist-page-bg>.row div img{
     width:50vh;
@@ -26,9 +32,8 @@ body{
 .artist-page-songLists{
     width: 100%;
     height: 55vh;
-   
     background: rgb(14,14,14);
-background: linear-gradient(0deg, rgba(14,14,14,1) 0%, rgba(0,0,0,1) 50%, rgba(71,71,71,1) 75%, rgba(124,122,122,1) 89%, rgba(124,123,123,1) 98%);
+    background: linear-gradient(0deg, rgba(14,14,14,1) 0%, rgba(0,0,0,1) 50%, rgba(71,71,71,1) 75%, rgba(124,122,122,1) 89%, rgba(124,123,123,1) 98%);
 }
 
 .artist-page-songLists .pausebtn{
