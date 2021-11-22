@@ -1,8 +1,8 @@
 .play-bar{
   background-color:rgb(34, 34, 34);  
   position: fixed;
-  
-  margin-top:70vh;
+  z-index: 10;
+  margin-top:80vh;
   color: rgb(167, 160, 160);
   
 }
@@ -13,4 +13,20 @@ font-size: 50px;
 
 i:hover{
 color: white;
+}
+
+i:onclick{
+    color:green;
+}
+
+hr{
+    width: 750px;
+    border:5px solid grey;
+    border-radius: 5px;
+}
+
+.volume hr{
+    width: 70px;
+    border:5px solid grey;
+    border-radius: 5px;
 }
