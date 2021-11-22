@@ -1,0 +1,44 @@
+body {
+  /* background: rgb(59, 58, 59);
+  background: linear-gradient(
+    180deg,
+    rgb(66, 65, 66) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
+  background-color: gray;
+}
+.jumbotron {
+  background: none;
+  border-radius: 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+}
+
+.container-header {
+  background-color: #00000066 !important;
+}
+
+.headerSmallRow {
+  color: #ccc;
+  margin-left: 5px;
+}
+
+#albumImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.album-title {
+  color: white;
+}
+.album-header {
+  color: white;
+}
+.ancher-header {
+  color: white;
+  margin-left: 5px;
+}
