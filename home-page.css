@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(18,18,18);
+}
+
+.side-bar {
+    background-color: black;
+    display: inline-block;
+    color: rgb(134,136,148);
+}
+
+.home, .search, .library, .square, .liked-songs {
+    font-size: 15px;
+    align-items: center;
+}
+
+.home {
+    color: white;
+    background-color: rgb(40,40,40);
+    border-radius: 4px;
+}
+
+.bi-list {
+    transform: rotate(90deg);
+}
+
+.bi-house-door-fill, .bi-search, .bi-list, .bi-plus-square-fill, .bi-heart-fill {
+    font-size: 20px;
+}
+
+hr {
+    border-color: rgb(77, 77, 77);
+}
+
+.sidebar-list {
+    height: 260px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #161616;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
