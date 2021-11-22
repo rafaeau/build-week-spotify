@@ -42,3 +42,15 @@ a:hover {
   color: white;
   margin-left: 5px;
 }
+.table {
+  color: #121212;
+}
+.link {
+  color: white;
+}
+.colors {
+  columns: white;
+}
+.TheaderText {
+  color: #bbb;
+}
