@@ -1,3 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    z-index: 10;
+    margin: 2%;
+}
 .nav-bar>.row>div .arrow span a{
     background-color: rgba(0, 0, 0, 0.719);
     padding: 3px 6px;
