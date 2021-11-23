@@ -8,11 +8,11 @@ body{
 }
 .nav-bar>.row>div .arrow span a{
     background-color: rgba(0, 0, 0, 0.719);
-    padding: 3px 6px;
+    padding: 4px 10px;
     color: white;
     margin: 5px;
     border-radius: 50%;
-    font-size: 14px;
+    font-size: 20px;
    font-weight: bold;
 }
 
@@ -30,4 +30,18 @@ width:180px;
     color:white;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.nav-bar .user-profile{
+    position: relative;
+}
+
+ .nav-bar .user-profile .user-drop-menu{
+    
+    background-color: rgb(48, 47, 47);
+
+} 
+
+.user-drop-menu a:hover{
+    background-color: rgba(85, 84, 84, 0.527);
 }

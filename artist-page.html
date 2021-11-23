@@ -23,10 +23,16 @@
                   <span><a href=""><i class="fas fa-chevron-left"></i></a></span>
                   <span><a href=""><i class="fas fa-chevron-right"></i></a></span>
             </div>
-            <div class="user-profile d-flex justify-content-between align-items-center px-2">
+            <div class="user-profile d-flex justify-content-between align-items-center px-2  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false" >
               <span><a href=""></a><i class="fas fa-user-circle"></i></span>
               <span>Sportify Username Displays here</span>
-              <span><a href=""><i class="fas fa-sort-down text-white mb-2"></i></a> </span>
+              <!-- <span><a href=""><i class="fas fa-sort-down text-white mb-2"></i></a> </span> -->
+              <div class="user-drop-menu dropdown-menu text" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item text-white"> Account</a>
+                  <a class="dropdown-item text-white">Profile</a>
+                  <a class="dropdown-item text-white">Upgrade to Premium</a>
+                  <a class="dropdown-item text-white">Log out</a>
+              </div>
                </div>
         </div>
       </div>
