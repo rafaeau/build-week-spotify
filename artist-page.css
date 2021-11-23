@@ -3,6 +3,10 @@ body{
     padding:0;
     color: white;
 }
+
+.artist-page-songLists a{
+color:white;
+}
 /* side bar  */
 
 
@@ -51,7 +55,7 @@ body{
     width: 100%;
     
     background: rgb(14,14,14);
-    background: linear-gradient(0deg, rgb(12, 11, 11) 0%, rgb(31, 30, 30) 55%, rgb(37, 36, 36) 65%, rgb(54, 53, 53) 80%, rgb(78, 77, 77) 90%, rgb(80, 77, 77) 95%);
+    background: linear-gradient(0deg, rgb(12, 11, 11) 0%, rgb(31, 30, 30) 65%, rgb(37, 36, 36) 75%, rgb(54, 53, 53) 85%,rgb(73, 73, 73) 95%);
 }
 
 .artist-page-songLists .pausebtn{
