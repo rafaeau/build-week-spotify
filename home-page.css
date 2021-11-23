@@ -54,7 +54,7 @@ hr {
 
 .small-card {
     margin: 10px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(161, 161, 161, 0.2);
     color: white;
     height: 60px;
     border-radius: 5px;
@@ -71,4 +71,31 @@ hr {
 .bg-grad {
     height: 230px;
     background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(113,113,113,1) 100%);
+}
+
+.card-text {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.card {
+    background: rgba(121, 121, 121, 0.2);
+    color: white;
+}
+
+.sub-text {
+    color:rgb(163, 163, 163);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.pod-img {
+    border-radius: 15%;
+}
+
+.art-img {
+    border-radius: 50%;
 }
