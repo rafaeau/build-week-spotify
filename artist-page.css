@@ -294,51 +294,58 @@ bottom:50%;
     position: fixed;
     bottom:0;
     z-index: 1;
-
-    color: rgb(167, 160, 160);
-    
+    color: rgb(167, 160, 160); 
   }
   
   .play-bar>.row div:nth-of-type(2) i:nth-of-type(3) {
   font-size: 50px;
   }
   
+  .artist-page-cards .card{
+      position: relative;
+  }
   
-  .artist-page-songLists .card .playbtn-2{
+  .artist-page-cards .card .playbtn-2{
+      top:55%;
+      right: 10%;
+      position: absolute;
+  }
+  
+
+  .artist-page-songLists .card .playbtn-2 i{
     color:rgb(85,186,85);
     font-size: 35px;
     position: relative;
-    z-index: 0;
-    opacity: 4;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+.artist-page-songLists .card .playbtn-2 i::after{
+    content: "";
+    width: 65%;
+    height: 62%;
+    top:6px;
+    left: 8px;
+    background-color: white;
+    border-radius: 40%;
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
 }
 
 .artist-page-songLists .card:hover{
     background-color: rgba(48, 46, 46, 0.507);
 }
 
-.artist-page-songLists .card:hover d .card{
+.artist-page-songLists .card:hover .card{
 box-shadow: 30px 30px 30px 30px white;
 }
 
-
-.playbtn-2{
-    color:
+.artist-page-songLists .card:hover .playbtn-2>i{
+opacity:1
 }
 
-
-
-.artist-page-songLists .card .playbtn-2::after{
-    content: "";
-    width: 65%;
-    height: 45%;
-    top:24px;
-    left: 10px;
-    background-color: rgba(17, 17, 17, 0.281);
-    border-radius: 40%;
-    position: absolute;
-    z-index: -1;
-    opacity: 1;
-}
 
 .play-bar i:hover{
     color: white;
