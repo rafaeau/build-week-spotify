@@ -4,8 +4,60 @@ body{
     color: white;
 }
 
+
 .artist-page-songLists a{
 color:white;
+}
+
+
+/* nav bar */
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    z-index: 10;
+    margin: 2%;
+    position:fixed;
+}
+.nav-bar>.row>div .arrow span a{
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 4px 10px;
+    color: white;
+    margin: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+   font-weight: bold;
+}
+
+.nav-bar>.row>div .arrow + div{
+background-color: rgba(0, 0, 0, 0.801);
+color: white;
+border-radius: 50px;
+width:180px;
+
+} 
+
+.nav-bar>.row>div .arrow + div span:nth-of-type(2){
+    width:60px;
+    height: 25px;
+    color:white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-bar .user-profile{
+    position: relative;
+}
+
+ .nav-bar .user-profile .user-drop-menu{
+    
+    background-color: rgb(48, 47, 47);
+
+} 
+
+.user-drop-menu a:hover{
+    background-color: rgba(85, 84, 84, 0.527);
 }
 /* side bar  */
 
