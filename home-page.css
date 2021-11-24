@@ -3,9 +3,34 @@ body {
 }
 
 .bi-toggle-on, .bi-toggle-off {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 1);
   margin-right: 20px;
   font-size: 45px;
+  z-index: 1;
+}
+
+.bi-toggle-on::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: rgb(153, 153, 153);
+  top: 20px;
+  left: 19px;
+  z-index: -1;
+}
+
+.bi-toggle-off::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 40%;
+  border-radius: 35%;
+  background-color: rgb(153, 153, 153);
+  top: 20px;
+  left: 2px;
+  z-index: -1;
 }
 
 .chevrons {

@@ -22,7 +22,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2 side-bar">
+            <div class="col-2 side-bar show">
                 <div class="d-flex py-3"><a href="./home-page.html"><img src="./assets/Spotify_Logo_RGB_White.png"
                             alt="logo" height="40px"></a></div>
                 <div class="home d-flex"><i class="bi bi-house-door-fill my-2 px-3"></i><strong>Home</strong></div>
@@ -68,7 +68,7 @@
 
                             <div class="d-flex align-items-center mt-n3">
                                 <div>
-                                <i class="bi bi-toggle-on"></i>
+                                <i id="toggle-btn" class="bi bi-toggle-on position-relative"></i>
                                 </div>
                             
                                 <div>
@@ -408,10 +408,16 @@
         const toggleSideBar = function () {
             let sideBar = document.querySelector(".side-bar")
             let col10 = document.querySelector(".bg-grad")
-            sideBar.classList.remove("d-none")
-            sideBar.classList.add("show")
-            
+            sideBar.classList.toggle("d-none")
+            col10.classList.toggle("col-10")
+            col10.classList.toggle("col-12")
+            let toggle = document.querySelector("#toggle-btn")
+            toggle.classList.toggle("bi-toggle-on")
+            toggle.classList.toggle("bi-toggle-off")
         }
+
+        let toggleBtn = document.querySelector("#toggle-btn")
+        toggleBtn.addEventListener("click", toggleSideBar)
 
     </script>
 
