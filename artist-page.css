@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding:0;
     color: white;
+    overflow-x: hidden;
 }
 
 
@@ -11,10 +12,7 @@ color:white;
 
 
 /* nav bar */
-body{
-    margin: 0;
-    padding: 0;
-}
+
 .nav-bar{
     z-index: 10;
     margin: 2%;
@@ -63,6 +61,59 @@ width:180px;
 /* side bar  */
 
 
+.side-bar {
+    background-color: black;
+    display: inline-block;
+    color: rgb(134,136,148);
+    z-index: 10;
+    position: fixed;
+    height: 100vh;
+   width: 100%;
+}
+
+.home, .search, .library, .square, .liked-songs {
+    font-size: 15px;
+    align-items: center;
+}
+
+.home {
+    color: white;
+    background-color: rgb(40,40,40);
+    border-radius: 4px;
+}
+
+.bi-list {
+    transform: rotate(90deg);
+}
+
+.bi-house-door-fill, .bi-search, .bi-list, .bi-plus-square-fill, .bi-heart-fill {
+    font-size: 20px;
+}
+
+hr {
+    border-color: rgb(77, 77, 77);
+}
+
+.sidebar-list {
+    height: 260px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #161616;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
 /* artist page background cover  first section */
 .artist-display{
     position:fixed;
@@ -106,7 +157,6 @@ width:180px;
     position:relative;
     margin-top: 40vh;
     width: 100%;
-    
     background: rgb(14,14,14);
     background: linear-gradient(0deg, rgb(12, 11, 11) 0%, rgb(31, 30, 30) 65%, rgb(37, 36, 36) 75%, rgb(54, 53, 53) 85%,rgb(73, 73, 73) 95%);
 }
@@ -227,7 +277,7 @@ bottom:50%;
       color:green;
   }
   
-  hr{
+  .play-bar hr{
       width: 750px;
       border:5px solid grey;
       border-radius: 5px;
