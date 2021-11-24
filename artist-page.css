@@ -111,7 +111,7 @@ hr {
     background: #161616;
 }
   
-::-webkit-scrollbar-thumb {
+.side-bar ::-webkit-scrollbar-thumb {
     background: #888;
 }
 /* artist page background cover  first section */
@@ -196,8 +196,10 @@ hr {
     opacity:0;
 }
 
-.artist-page-songLists tr td{
-    padding: 10px ;
+.artist-page-songLists tr td div{
+    display: flex;
+    align-items: center;
+    height:50px;
    justify-content: baseline;
 }
 
