@@ -47,6 +47,7 @@ width:180px;
 }
 
 .nav-bar .user-profile{
+    
     position: relative;
 }
 
@@ -159,7 +160,7 @@ width:180px;
     
 }
 
-.card{
+.artist-page-cards .card{
     margin: 0;
     padding:15px;
     background:rgb(22, 22, 22);
@@ -167,7 +168,7 @@ width:180px;
 
 }
 
-.card i{
+.artist-page-cards .card i{
 color: rgb(25, 175, 75);
 position: absolute;
 opacity:0;
@@ -176,7 +177,7 @@ right:10%;
 bottom:50%;
 }
 
-.card-img{
+.arist-page .card-img{
     box-shadow: 5px 5px 5px 5px black;
 }
 
@@ -201,3 +202,39 @@ bottom:50%;
     background-color: white;
   opacity:1;
     }
+
+
+/* palayer bar */
+.play-bar{
+    background-color:rgb(34, 34, 34);  
+    position: fixed;
+    bottom:0;
+    z-index: 10;
+    
+    color: rgb(167, 160, 160);
+    
+  }
+  
+  .play-bar>.row div:nth-of-type(2) i:nth-of-type(3) {
+  font-size: 50px;
+  }
+  
+  i:hover{
+  color: white;
+  }
+  
+  i:onclick{
+      color:green;
+  }
+  
+  hr{
+      width: 750px;
+      border:5px solid grey;
+      border-radius: 5px;
+  }
+  
+  .volume hr{
+      width: 70px;
+      border:5px solid grey;
+      border-radius: 5px;
+  }

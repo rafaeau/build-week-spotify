@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="artist-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/73c4ca1b43.js" crossorigin="anonymous"></script>
     <title>artist-page</title>
 
@@ -20,7 +21,7 @@
                   <span><a href=""><i class="fas fa-chevron-left"></i></a></span>
                   <span><a href=""><i class="fas fa-chevron-right"></i></a></span>
             </div>
-            <div class="user-profile d-flex justify-content-between align-items-center px-2  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false" >
+            <div class="user-profile d-flex justify-content-between align-items-center p-2  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false" >
               <span><a href=""></a><i class="fas fa-user-circle"></i></span>
               <span>Sportify Username Displays here</span>
               <!-- <span><a href=""><i class="fas fa-sort-down text-white mb-2"></i></a> </span> -->
@@ -88,7 +89,7 @@
                             <tr class="align-baseline">
                               <td>1</td>
                               <td><img src="/artist-page-pic/icon1.png" style="width:50px" alt="">  </td>
-                              <td>Another One bite of love</td>
+                              <td ><div class="d-flex mt-3">Another One bite of love</div></td>
                               <td>1,222,432,345</td>
                               <td><a href=""><i class="far fa-heart"></i></a></td>
                               <td>3:24</td>
@@ -169,7 +170,9 @@
                             </tr>
                           </tbody>
                         </table>
+                        
 
+                        
                       
                       </div>
                       <div class="col-3">
@@ -196,7 +199,7 @@
                 </div>
               </div>
 
-             <div class="container-fluid">
+             <div class="artist-page-cards container-fluid">
               <h2>Popular Series</h2>
               <div class="row m-3">
                 <div class="col">
@@ -256,6 +259,43 @@
           </div>
         </div>
       </main>
+
+      <footer>
+        <div class="play-bar container-fluid   py-2">
+          <div class="row  align-items-center pb-4">
+            <div class="col-12 col-12 m-4 m-md-0  col-lg-3">
+              <div class="d-flex justify-content-around align-items-center">
+                <img src="/artist-page-pic/icon2.png"  style="width:55px" alt="">
+                <div class="d-inline-block">            <p class="p-0 m-0" >Another One Bites the Dust <br> <small>Queen</small></p>
+                </div>
+               <i class="far fa-heart"></i>
+               <i class="bi bi-pip"></i>
+              </div>
+            </div>
+            <div class="col-12 col-12 m-4 m-md-0  col-lg-7">
+              <div class="d-flex justify-content-center align-items-center">
+                <i class="fas fa-random m-2"></i>
+                <i class="fas fa-step-backward m-2"></i>
+                <i class="fas fa-play-circle m-2"></i>
+                <i class="fas fa-step-forward m-2"></i>
+                <i class="fas fa-retweet m-2"></i>
+              </div>
+              <div class="d-flex justify-content-center align-items-center">
+                <span>3:45</span>
+                 <hr>
+                  <span>4:01</span>
+                   </div>
+            </div>
+            <div class="col-12 m-4 m-md-0 col-lg-2 d-flex justify-content-around align-items-center">
+              <i class="bi bi-mic"></i>
+              <i class="bi bi-card-text"></i>
+              <i class="bi bi-pc-display"></i>
+              <i class="bi bi-volume-up"></i>
+                              <span class="volume"><hr></span>
+            </div>
+          </div>
+        </div>
+      </footer>
 
 
 
