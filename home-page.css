@@ -52,6 +52,7 @@ body {
 
 .side-bar {
   background-color: black;
+  height: 100vh;
   display: inline-block;
   color: rgb(134, 136, 148);
   z-index: 10;
@@ -243,6 +244,7 @@ hr {
 
 .play-bar{
   height: 110px;
+  width: 100vw;
   background-color:rgb(24,24,24);
   position: fixed;
   bottom:0;
