@@ -279,14 +279,4 @@ bottom:50%;
       color:green;
   }
   
-  .play-bar hr{
-      width: 750px;
-      border:5px solid grey;
-      border-radius: 5px;
-  }
-  
-  .volume hr{
-      width: 70px;
-      border:5px solid grey;
-      border-radius: 5px;
-  }
+ 
