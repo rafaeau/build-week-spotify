@@ -200,13 +200,14 @@ position: relative;
     color:white;
     opacity:0;
 }
+
+
 .artist-page-songLists tr td:nth-of-type(3) div{
 overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
 
 }
-
 
 
 .artist-page-songLists tr td div{
@@ -251,11 +252,11 @@ bottom:50%;
 /* hover */
  .artist-page-songLists tr:hover {
     background-color:rgba(111, 112, 112, 0.432);
-    
-    
 } 
 
-.artist-page-songLists tr td div:hover i{
+
+
+.artist-page-songLists tr:hover td>div>a>i{
     opacity:1;
 }
 
@@ -352,11 +353,7 @@ font-size: 45px;
 
 
 .artist-info {
-   top:-50px;
-    left:10px;
-    color:white;
-    z-index: 1;
-    position: absolute;
+   
     left:5%;
     margin-top: 15%;
 }
