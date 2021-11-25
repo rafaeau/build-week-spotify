@@ -98,7 +98,7 @@
                 <div class="container pt-1">
                     <p style="font-size: 28px; font-weight: 700; color:white;">Good morning</p>
 
-                    <div class="row card-deck justify-content-around">
+                    <div class="row card-deck justify-content-around" id="small-card-deck">
 
                         <div class="small-card align-items-center col-sm-6 col-md-4 col-lg-2 position-relative">
                             <div class="play-btn position-absolute"><i
@@ -418,6 +418,22 @@
 
         let toggleBtn = document.querySelector("#toggle-btn")
         toggleBtn.addEventListener("click", toggleSideBar)
+
+        const GetRandomColor = function() {
+            let red = Math.floor(Math.random() * 255)
+            let green = Math.floor(Math.random() * 255)
+            let blue = Math.floor(Math.random() * 255)
+            return 'rgb(' + red + ', ' + green + ', ' + blue + ')'
+        }
+
+        const changeBgColor = function () {
+            let randomColor = GetRandomColor()
+            let bgGrad = document.querySelector(".bg-grad")
+            bgGrad.style.background = `linear-gradient(0deg, rgba(18, 18, 18, 1) 0%, ${randomColor} 100%)`
+        }
+
+        let changeBg = document.getElementById("small-card-deck")
+        changeBg.addEventListener("mouseover", changeBgColor)
 
     </script>
 
