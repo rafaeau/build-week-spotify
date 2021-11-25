@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding:0;
     color: white;
-   
     width: 100%;
    
 }
@@ -126,7 +125,7 @@ position: relative;
 .verified-icon::after{
     content: "";
     background-color: white;
-    top:14%;
+    top:22%;
     left:12%;
     width: 55%;
     height:50%;
@@ -244,7 +243,7 @@ right:10%;
 bottom:50%;
 }
 
-.arist-page .card-img{
+.artist-page .card-img{
     box-shadow: 5px 5px 5px 5px black;
 }
 
@@ -269,17 +268,40 @@ bottom:50%;
     }
 
 
-/* palayer bar */
+/* player bar */
 .play-bar{
-    background-color:rgb(34, 34, 34);  
+    height: 110px;
+    width: 100vw;
+    background-color:rgb(24,24,24);
     position: fixed;
     bottom:0;
-    z-index: 1;
-    color: rgb(167, 160, 160); 
+    z-index: 100;
+    color: rgb(167, 160, 160);
   }
   
   .play-bar>.row div:nth-of-type(2) i:nth-of-type(3) {
   font-size: 50px;
+  }
+  
+  i:hover{
+    transform: scale(1.1);
+  }
+  
+  .play-bar hr{
+      width: 700px;
+      border:3px solid grey;
+      border-radius: 5px;
+  }
+  
+  .volume hr{
+      width: 70px;
+      border:3px solid grey;
+      border-radius: 5px;
+  }
+  
+  .play-bottom {
+    font-size: 35px !important;
+    color: white;
   }
   
   .artist-page-cards .card{
@@ -326,40 +348,6 @@ box-shadow: 30px 30px 30px 30px white;
 .artist-page-songLists .card:hover .playbtn-2>i{
 opacity:1
 }
-
-
-.play-bar i:hover{
-    color: white;
-    }
-
-
-
-#play-time{
-    width:700px;
-}
-
-input[type='range'] {
-    overflow: hidden;
-    width: 60px;
-    -webkit-appearance: none;
-    background-color: #52514f;
-    border-radius: 5px;
-  }
-  
-  input[type="range"]::-moz-range-progress {
-    background-color: #43e5f7; 
-  }
-   
-  input[type='range']::-webkit-slider-runnable-track {
-    height: 6px;
-    -webkit-appearance: none;
-    color: #c8c9c9;
-  }
-  
-
-  input[type="range"]::-moz-range-track {  
-    background-color: #9a905d;
-  }
 
 
   @media screen and (max-width: 1100px){
