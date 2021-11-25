@@ -25,7 +25,7 @@
             <div class="col-2 side-bar show">
                 <div class="d-flex py-3"><a href="./home-page.html"><img src="./assets/Spotify_Logo_RGB_White.png"
                             alt="logo" height="40px"></a></div>
-                <div class="home d-flex"><i class="bi bi-house-door-fill my-2 px-3"></i><strong>Home</strong></div>
+                <a href="./home-page.html"><div class="home d-flex"><i class="bi bi-house-door-fill my-2 px-3"></i><strong>Home</strong></div></a>
                 <div class="search d-flex"><i class="bi bi-search my-2 px-3"></i><strong>Search</strong></div>
                 <div class="library d-flex"><i class="bi bi-list my-2 px-3"></i><strong>Your Library</strong></div>
 
@@ -87,7 +87,7 @@
                                 <div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="#">Account</a>
                                 <a class="dropdown-item" href="#">Profile</a>
-                                <a class="dropdown-item" href="#">Log out</a>
+                                <a class="dropdown-item" href="./login-page.html">Log out</a>
                                 </div>
                             </div>
 
@@ -98,7 +98,7 @@
                 <div class="container pt-1">
                     <p style="font-size: 28px; font-weight: 700; color:white;">Good morning</p>
 
-                    <div class="row card-deck justify-content-around" id="small-card-deck">
+                    <div class="row card-deck justify-content-around">
 
                         <div class="small-card align-items-center col-sm-6 col-md-4 col-lg-2 position-relative">
                             <div class="play-btn position-absolute"><i
@@ -432,8 +432,10 @@
             bgGrad.style.background = `linear-gradient(0deg, rgba(18, 18, 18, 1) 0%, ${randomColor} 100%)`
         }
 
-        let changeBg = document.getElementById("small-card-deck")
-        changeBg.addEventListener("mouseover", changeBgColor)
+        let changeBg = document.getElementsByClassName("small-card")
+        for (let i=0; i<changeBg.length; i++) {
+            changeBg[i].addEventListener("mouseenter", changeBgColor)
+        }
 
     </script>
 

@@ -1,65 +1,116 @@
-body {
-  text-align: center;
+.head {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-content: middle;
+  vertical-align: middle;
+  display: flex;
 }
 
-h1 {
-  text-decoration: solid;
-  text-align: center;
-}
-h5 {
-  font-weight: bold;
-}
-img {
-  padding-top: 20px;
-  text-align: center;
-  height: 90px;
-  width: 280px;
-}
-.btn {
-  width: 600px;
-  border-radius: 50px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+.row .col-12 hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgb(204, 204, 204);
 }
 
-.login-form > input {
-  margin-top: 5;
-  text-align: left;
-}
-.login-form > label {
-  text-align: left;
-}
-input {
-  width: 500px;
-  height: 40px;
-}
-#saveEmail {
-  margin-top: 3;
-  width: 50px;
-  height: 20px;
-}
-.login-button {
-  font-weight: bold;
+.social-button{
+  margin-top: 10px;
+  display: flex;
   text-align: center;
-  margin-left: 5;
-  border-radius: 50px;
-  background-color: rgb(4, 125, 22);
-  width: 200px;
-  height: 60px;
+  vertical-align: middle;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
-.facebook-btn {
-  background-color: rgb(36, 77, 138);
+
+.social-button .col-4 .btn p {
+  font-size: small;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1%;
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
+  height: 12px;
+}
+
+.facebook .col-4 .btn{
   color: white;
+  background-color: #3b5998;
 }
-.signup-button {
+
+.apple .col-4 .btn{
+  color: white;
+  background-color: #000000;
+}
+
+.google .col-4 .btn{
+  color: #616467;
+  background-color: transparent;
+  border: 2px solid #616467;
+}
+
+#or-line {
+  font-size: 12px;
   font-weight: bold;
-  margin-top: 3;
-  border-radius: 50px;
-  width: 200px;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.form-group {
+  font-weight: bolder;
+}
+
+.container .row .col-4 .remember-login {
+  display: inline;
+  margin-top: 10px;
+  vertical-align: middle;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.btn-login {
   height: 45px;
-  border-color: black;
+  width: 50%;
+  float:right;
+  background-color: #15883e;
+  color: white;
+  font-weight: bolder;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.line-after-login-btn {
+  margin-top: -20px;
 }
 
 a {
-  color: black;
-  text-align: center;
+  color: #15883e
+}
+
+a:hover {
+  color: #1DB954;
+}
+
+.btn-login:hover {
+  background-color: #1DB954;
+  color: white
+}
+
+#grey-btn:hover {
+  background-color: #616467;
+  color: white
+}
+
+#face-btn:hover {
+  background-color: #537cd4;
+  color: white
+}
+
+#apple-btn:hover {
+  background-color: #313131;
+  color: white
 }
