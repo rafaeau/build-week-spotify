@@ -101,7 +101,7 @@
                 </div>
               
               </div>
-             <div class="relative-artist- info row"> 
+             <div class=" row"> 
                <div class="artist-info">
               <span class="verified-icon"> <i class="bi bi-patch-check-fill"></i></span>
               <span>Verified Artist</span>
@@ -234,8 +234,7 @@
                           </div>
                          </div>
                       </div>
-                    </div>
-                    
+                    </div>                
                     <div class="artist-page-cards container-fluid ">
                       <h2>Popular Series</h2>
                       <div class="row d-flex justify-content-around mt-2">
@@ -300,9 +299,9 @@
               </div>
                       </div>
         
-                     </div>
+                   
         
-                     <div class="artist-page-cards container-fluid ">
+                    
                       <h2>Popular Series</h2>
                       <div class="row d-flex justify-content-around">
                         <div class="col-12 col-sm-6 col-lg-2  m-0 p-0 mt-2">
@@ -366,9 +365,9 @@
               </div>
                       </div>
         
-                     </div>
+                     
         
-                     <div class="artist-page-cards container-fluid ">
+                   
                       <h2>Newly Added</h2>
                       <div class="row d-flex justify-content-around">
                         <div class="col-12 col-sm-6 col-lg-2  m-0 p-0 mt-2">
@@ -434,11 +433,8 @@
         
                     </div>
                   </div>
-                    
                 </div>
               </div>
-
->
             </div>
 
           </div>
@@ -481,6 +477,42 @@
             </div>
           </div>
         </div>
+
+        <div>
+          <a id="play" onclick="togglePlay('play')">Play the Audio</a>
+          <a id="pause" onclick="togglePlay('pause')" style="display:none">Pause the Audio</a>
+        </div>
+
+        <script>
+          function addEvent(obj, type, fn) {
+   if (obj.addEventListener) {
+     obj.addEventListener(type, fn, false);
+   } else if (obj.attachEvent) {
+     obj.attachEvent("on" + type, fn);
+   }
+}
+
+addEvent(document.getElementById('demo'), 'ended', function() {
+    document.getElementById('play').style.display = 'block';
+    document.getElementById('pause').style.display = 'none';
+});
+
+function togglePlay(state) {
+    var audio = document.getElementById('demo'),
+        play  = document.getElementById('play'),
+        pause = document.getElementById('pause');
+
+    if (state == 'play') {
+        audio.play();
+        play.style.display = 'none';
+        pause.style.display = 'block';
+    }else{
+        audio.pause();
+        play.style.display = 'block';
+        pause.style.display = 'none';
+    }
+}
+        </script>
       </footer>
 
 
