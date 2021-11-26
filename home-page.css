@@ -127,7 +127,7 @@ hr {
 
 .small-card {
   margin: 10px;
-  background: rgba(204, 204, 204, 0.2);
+  background: rgba(145, 145, 145, 0.2);
   color: white;
   height: 60px;
   border-radius: 5px;
@@ -172,7 +172,7 @@ a:hover {
 }
 
 .card {
-  background: rgba(121, 121, 121, 0.2);
+  background: rgba(90, 90, 90, 0.2);
   color: white;
 }
 
@@ -258,6 +258,10 @@ a:hover {
   padding-bottom: 110px;
 }
 
+i:hover{
+  transform: scale(1.1);
+}
+
 .play-bar{
   height: 110px;
   width: 100vw;
@@ -268,12 +272,18 @@ a:hover {
   color: rgb(167, 160, 160);
 }
 
-.play-bar>.row div:nth-of-type(2) i:nth-of-type(3) {
-font-size: 50px;
+.play-hidden-center {
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: center;
 }
 
-i:hover{
-  transform: scale(1.1);
+@media(max-width: 1000px) {
+  .play-hidden {display: none !important;}
+}
+
+.play-bar>.row div:nth-of-type(2) i:nth-of-type(3) {
+font-size: 50px;
 }
 
 .play-bar hr{

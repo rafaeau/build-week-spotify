@@ -42,6 +42,9 @@ color:white;
 }
 
 
+@media (max-width: 1200px){
+    #artist-pick-img {height: 70px};
+  }
 
 /* side bar  */
 
@@ -187,7 +190,6 @@ position: relative;
     z-index: -1;
 }
 
-
 .artist-page-songLists table{
     color: (206, 205, 205)rgb;
     font-size: 15px;
@@ -274,7 +276,13 @@ bottom:50%;
 
 
 /* player bar */
-.play-bar{
+
+
+i:hover{
+    transform: scale(1.1);
+  }
+  
+  .play-bar{
     height: 110px;
     width: 100vw;
     background-color:rgb(24,24,24);
@@ -284,12 +292,18 @@ bottom:50%;
     color: rgb(167, 160, 160);
   }
   
-  .play-bar>.row div:nth-of-type(2) i:nth-of-type(3) {
-  font-size: 50px;
+  .play-hidden-center {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
   }
   
-  i:hover{
-    transform: scale(1.1);
+  @media(max-width: 1000px) {
+    .play-hidden {display: none !important;}
+  }
+  
+  .play-bar>.row div:nth-of-type(2) i:nth-of-type(3) {
+  font-size: 50px;
   }
   
   .play-bar hr{
@@ -308,6 +322,9 @@ bottom:50%;
     font-size: 35px !important;
     color: white;
   }
+
+
+
   
   .artist-page-cards .card{
       position: relative;
