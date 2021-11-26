@@ -160,7 +160,11 @@ position: relative;
     background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(18,18,18,1) 68%, rgba(18,18,18,1) 87%, rgba(21,21,21,1) 92%, rgba(54,54,54,1) 95%, rgba(80,80,80,1) 98%);
     padding-bottom: 150px;
     z-index: 0;
-;
+}
+
+.main-list {
+    padding-right: 0px!important;
+    overflow-x: hidden;
 }
 
 .artist-page-songLists .playbtn-1{
