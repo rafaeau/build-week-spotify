@@ -62,7 +62,7 @@
                 <div class="install d-flex pt-1 mb-2"><i class="bi bi-arrow-down-circle pr-2"></i><strong>Install
                         App</strong></div>
             </div>
-
+            
             <div class="col-10 bg-grad ml-auto">
 
                 <div class="container pt-3">
@@ -448,6 +448,27 @@
         for (let i = 0; i < changeBg.length; i++) {
             changeBg[i].addEventListener("mouseenter", changeBgColor)
         }
+
+        window.onload = function () {
+            changeBgSize();
+            $(window).bind('resize',function(){
+            changeBgSize()
+            });
+        }
+
+        const changeBgSize = function () {
+            let bgGrad = document.querySelector(".bg-grad")
+            if (window.innerWidth < 1000) {
+                bgGrad.classList.remove("col-10");
+                bgGrad.classList.add("col-12");
+                }
+            else {
+                bgGrad.classList.remove("col-12");
+                bgGrad.classList.add("col-10");
+            }
+        }
+
+        
 
     </script>
 
