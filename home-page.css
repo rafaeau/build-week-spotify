@@ -114,6 +114,12 @@ hr {
   border-color: rgb(77, 77, 77);
 }
 
+.play-bg {
+  bottom: 12px;
+  left: 12px;
+  z-index: -1;
+}
+
 .small-card {
   margin: 10px;
   background: rgba(204, 204, 204, 0.2);
@@ -146,6 +152,10 @@ hr {
     rgba(18, 18, 18, 1) 0%,
     rgb(158, 158, 158) 100%
   );
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .card-text {
