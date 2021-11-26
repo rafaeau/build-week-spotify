@@ -1,0 +1,117 @@
+body {
+  /* background: rgb(59, 58, 59);
+  background: linear-gradient(
+    180deg,
+    rgb(66, 65, 66) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
+  background-color: gray;
+}
+.jumbotron {
+  background: none;
+  border-radius: 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+}
+
+.container-header {
+  background-color: #00000066 !important;
+}
+
+.headerSmallRow {
+  color: #ccc;
+  margin-left: 5px;
+}
+
+#albumImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.album-title {
+  color: white;
+}
+.album-header {
+  color: white;
+}
+.ancher-header {
+  color: white;
+  margin-left: 5px;
+}
+.table {
+  color: #121212;
+}
+.link {
+  color: white;
+}
+.colors {
+  columns: white;
+}
+.TheaderText {
+  color: #bbb;
+}
+
+/**/
+.shortWidth {
+  width: 32px;
+}
+
+#copyright p {
+  font-size: 0.7em;
+}
+
+.bottom-album #seeMore {
+  color: white;
+}
+
+.card {
+  /* background-color: #121212; */
+  margin-top: 3px;
+}
+.card-popular-release {
+  width: 13rem;
+  height: 17rem;
+  background: #121212;
+  transition: 0.3s;
+}
+.card-popular-release:hover {
+  width: 13rem;
+  height: 17rem;
+  box-shadow: 1px 1px 5px 5px rgb(150, 150, 150, 0.2);
+  background: #313030;
+}
+.album-img {
+  width: 11rem;
+  height: 11rem;
+}
+.card-album-text {
+  font-size: 13px;
+  color: rgb(192, 192, 192);
+}
+.card {
+  color: transparent;
+}
+.card:hover {
+  color: #00ff00;
+}
+.card-body {
+  color: inherit;
+}
+.playButton {
+  color: inherit;
+}
+.card-about-contents {
+  margin-top: 350px;
+  margin-left: 50px;
+}
+.bottom-album {
+  /* background-color: #121212; */
+}
+#botton-title a {
+  text-decoration: none;
+  color: white;
+}
